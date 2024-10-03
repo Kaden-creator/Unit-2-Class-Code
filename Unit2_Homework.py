@@ -23,9 +23,14 @@ title = r"""
 """
 print(title)
 
-portland_seatle = input("") 
-car_gas = input("how many miles per gallon does you car gets, whole numbers please: ")
-cost_gas = input("how much a gallon of gas is near your house, don't need whole numbers: ")
-car_hold = input("how many gallons of gas does your car holds: ")
-total_cost = portland_seatle*cost_gas/car_gas
-print(f"The total cost of your trip will be: {total_cost}")
+portland_seatle = 173.8 
+mpg = int(input("how many miles per gallon does you car gets, whole numbers please: "))
+current_gallons = float(input("How many gallons of gas is in your car?: "))
+cost_gas = float(input("how much a gallon of gas is near your house, don't need whole numbers: "))
+car_hold = int(input("how many gallons of gas does your car holds: "))
+gas_to_full = car_hold - current_gallons
+cost = cost_gas * car_hold
+gallons_to_seatle = portland_seatle/mpg
+cost_to_seatle = gallons_to_seatle * cost
+print(f"It will cost you ${cost} to fill your car with gas.\n"
+     f"$ {cost_to_seatle} of that was spent driving to Seatle.")
