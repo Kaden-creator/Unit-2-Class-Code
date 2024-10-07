@@ -28,9 +28,9 @@ adjective_3 = input("I need a adjective:")
 adverb_1 = input("I need a adverb:")
 adverb_2 = input("I need a adverb (manners):")
 
-print(person_name)
+print(f"Name:{person_name.title()}")
 
-print(players_date)
+print("Today\'s Date is {players_date}")
 
 print(f"We start off this story in {adjective_1} {noun_1} with a very {adjective_2} and {adjective_3} {noun_2}. We are here to watch {noun_3} {verb_1} really fast, but in the mean time
 \n we should {verb_2} to {noun_4} because I forgot to get food for dinner. We got to {noun_4} were we {adverb_1} walked around the place. The place reminded me of {noun_5} because
